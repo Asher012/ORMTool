@@ -20,7 +20,7 @@ import schedule
 import threading
 import hashlib
 import secrets
-from sklearn.feature_extraction.text_visualizer import TfidfVectorizer, CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.cluster import KMeans, DBSCAN
 from sklearn.decomposition import LatentDirichletAllocation, PCA
 from sklearn.model_selection import cross_val_score
