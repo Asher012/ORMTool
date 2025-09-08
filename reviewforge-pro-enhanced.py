@@ -1,3 +1,16 @@
+# ─────────────── Playwright Auto-Installer ────────────────
+import subprocess
+import sys
+
+try:
+    from playwright.sync_api import sync_playwright
+except ImportError:
+    subprocess.run(
+        [sys.executable, "-m", "playwright", "install", "--with-deps", "chromium"],
+        check=True
+    )
+    from playwright.sync_api import sync_playwright
+
 import streamlit as st
 import pandas as pd
 import numpy as np
