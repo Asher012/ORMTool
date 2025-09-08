@@ -1,0 +1,7 @@
+# Quick Fix for Import Issues
+# Replace line 25 in reviewforge-pro-enhanced.py with this corrected import:
+
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+
+# The original line had "text_visualizer" which should be "text"
+# This is the only correction needed in the main file.
